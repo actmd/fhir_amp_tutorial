@@ -1,6 +1,6 @@
 {
   "name": "FHIR AMP Tutorial",
-  "description": "This is a guide for creating a simple application that can let you extract and display Allergies, Medications and Problems (Conditions) from a FHIR server.",
+  "description": "A simple flask app that can extract and display Allergies, Medications and Problems.",
   "repository": "https://github.com/actmd/fhir_amp_tutorial",
   "keywords": ["python", "flask", "fhir", "allergies", "medications", "problems", "conditions"]
 }
