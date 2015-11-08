@@ -12,5 +12,14 @@ Login to the Epic open api (so you can access the sandbox)
 
 Fork this, and run on heroku.
 
+# What the app does
+
+It connects to the demo epic instance, and 
+
+* retrieves a patient list
+* for each patient you can see their allergies, medications, and conditions
+
+
+
 
 

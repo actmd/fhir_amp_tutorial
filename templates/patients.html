@@ -1,0 +1,10 @@
+<p>FHIR does not let you query for a list of patients, so here are some which are drawn from your apps "database".</p>
+<ul>
+    {% for patient in db %}
+        <li>{{ patient['firstname'] }} {{ patient['lastname'] }}
+            <a href="patient/{{ patient['fhir_id'] }}/allergies">Allergies</a>
+            <a href="patient/{{ patient['fhir_id'] }}/medications">Medications</a>
+            <a href="patient/{{ patient['fhir_id'] }}/conditions">Conditions</a>
+        </li>
+    {% endfor %}
+</ul>
