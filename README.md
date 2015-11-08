@@ -32,6 +32,24 @@ It connects to the demo epic instance, and for a prespecified list of patients, 
 
 The scope of this project is just to show you how you might show a read-only view of this data.
 
+# Lessons learned
+
+The patient search interface is not designed to allow you to search for all patients in the system. It is designed to only allow you to search for patients by some strong criteria (generally has to include a family and a given name).
+
+You can see a list of all the available patients in the (Epic Patient Resource API page)[https://open.epic.com/Clinical/Patient].
+
+The FHIR id is hard coded in this application. When you do a search, the ID returned is actually the internal id. You cannot use this as your patient id. See this (example)[https://open-ic.epic.com/FHIR/api/FHIR/DSTU2/Patient?family=Argonaut&given=Jessica] 
+
+You will see the following returned:
+
+```json
+ "entry": [
+    {
+      "fullUrl": "https://open-ic.epic.com/FHIR/api/FHIR/DSTU2/Patient/TUKRxL29bxE9lyAcdTIyrWC6Ln5gZ-z7CLr2r-2SY964B",
+    }]
+```
+
+In theory, you could use the full url as the ID (according to Janet from Epic), or you could just parse the ID from the url above. In this application, Flask routing does not like the full URL as a parameter, just the ID. 
 
 
 

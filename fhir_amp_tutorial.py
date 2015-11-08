@@ -9,6 +9,7 @@ BASE_URL = 'https://open-ic.epic.com/FHIR/api/FHIR/DSTU2'
 
 DB_PATIENTS = [
     {'firstname': 'Jason', 'lastname': 'Argonaut', 'fhir_id': 'Tbt3KuCY0B5PSrJvCu2j-PlK.aiHsu2xUjUM8bWpetXoB'},
+    {'firstname': 'Jessica', 'lastname': 'Argonaut', 'fhir_id': "TUKRxL29bxE9lyAcdTIyrWC6Ln5gZ-z7CLr2r-2SY964B"},
     {'firstname': 'James', 'lastname': 'Kirk', 'fhir_id': 'ToHDIzZiIn5MNomO309q0f7TCmnOq6fbqOAWQHA1FRjkB'}
 ]
 
