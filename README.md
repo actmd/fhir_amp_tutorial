@@ -11,6 +11,8 @@ We are going to be using the following stack for demonstration purposes.
  
 Fork this, and run on heroku.
 
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+
 If you are going to run this locally, then you should install the pip requirements.
 
     pip install -r requirements.txt
