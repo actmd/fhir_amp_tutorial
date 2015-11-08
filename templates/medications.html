@@ -1,0 +1,15 @@
+{% extends "default.html" %}
+{% block content %}
+<h1>{{ medications['total'] }} Medications</h1>
+
+<ul>
+    {% for entry in medications['entry'] %}
+        <li>
+            {{ entry['resource']['medicationReference']['display'] }} -
+            {% for dosageInstruction in entry['resource']['dosageInstruction'] %}
+                {{ dosageInstruction['text'] }}
+            {% endfor %}
+        </li>
+    {% endfor %}
+</ul>
+{% endblock %}

@@ -1,3 +1,5 @@
+{% extends "default.html" %}
+{% block content %}
 <p>FHIR does not let you query for a list of patients, so here are some which are drawn from your apps "database".</p>
 <ul>
     {% for patient in db %}
@@ -8,3 +10,4 @@
         </li>
     {% endfor %}
 </ul>
+{% endblock %}

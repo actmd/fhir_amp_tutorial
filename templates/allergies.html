@@ -1,0 +1,17 @@
+{% extends "default.html" %}
+{% block content %}
+<h1>{{ allergies['total'] }} allergies</h1>
+<ul>
+{% for entry in allergies['entry'] %}
+    <li>
+        {{ entry['resource']['substance']['text'] }} -
+        {% for reaction in entry['resource']['reaction'] %}
+            {% for manifestation in reaction['manifestation'] %}
+                {{ manifestation['text'] }}
+            {% endfor %}
+        ({{ reaction['status'] }} onset {{ reaction['onset'] }})
+        {% endfor %}
+    </li>
+{% endfor %}
+</ul>
+{% endblock %}
