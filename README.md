@@ -2,7 +2,8 @@
 
 This is a guide for creating a simple application that can let you extract and display Allergies, Medications and Problems (Conditions) from a FHIR server.
 
-We are going to be using the following stack for demonstration purposes
+We are going to be using the following stack for demonstration purposes.
+
     * [Epic FHIR Resources](https://open.epic.com/Interface/FHIR) 
     * [Python Flask](http://flask.pocoo.org/) - a very decent micro-framework
 
