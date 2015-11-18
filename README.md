@@ -9,24 +9,6 @@ We are going to be using the following stack for demonstration purposes.
 
 You can try out it's functionality [here](https://fhir-amp-tutorial.herokuapp.com/).
 
-# Setup
- 
-Fork this, and run on heroku.
-
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
-
-If you are going to run this locally, then you should install the pip requirements.
-
-    pip install -r requirements.txt
-    
-If you are going to do local development, I much prefer using [LiveReload](https://github.com/lepture/python-livereload) so that tests are re-run on change, and the server is restarted when updated. If you want to use reload you should install the dev requirements.
-
-    pip install -r requirements_dev.txt
-    
-Then to use LiveReload during development, use
-
-    python live.py
-
 # What the app does
 
 It connects to the demo epic instance, and for a prespecified list of patients, lets you see their 
@@ -55,3 +37,22 @@ You will see the following returned:
 ```
 
 In theory, you could use the full url as the ID (according to Janet from Epic), or you could just parse the ID from the url above. In this application, Flask routing does not like the full URL as a parameter, just the ID. 
+
+# Setup
+ 
+Fork this, and run on heroku.
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+
+If you are going to run this locally, then you should install the pip requirements.
+
+    pip install -r requirements.txt
+    
+If you are going to do local development, I much prefer using [LiveReload](https://github.com/lepture/python-livereload) so that tests are re-run on change, and the server is restarted when updated. If you want to use reload you should install the dev requirements.
+
+    pip install -r requirements_dev.txt
+    
+Then to use LiveReload during development, use
+
+    python live.py
+
